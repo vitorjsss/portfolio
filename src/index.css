@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@200&display=swap|family=Sanchez&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: rgb(109, 103, 228);
+  font-family: "Sanchez", Serif;
+
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 28px;
+  font-family: "Montserrat", monospace;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+}
+
+nav>ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav>ul>li {
+  color: rgb(238, 237, 237);
+  margin: 0 0.2rem;
+  padding: 0 20px 0 15px;
+  display: inline;
+}
+
+nav>ul>li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li>a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", monospace;
+  color: white;
+
+}
+
+h1 {
+  font-size: 10vh;
+  margin: 0;
+}
+
+h2 {
+  font-size: 6vh;
+  font-style: normal;
+
+}
+
+h3 {
+  font-size: 5vh;
+  color: rgb(240, 222, 54);
+  font-weight: lighter;
+
+}
+
+p {
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+  margin-top: 10px;
+}
+
+img {
+  height: 450px;
+  width: 250px;
+}
+
+#project-title {
+  color: white;
+  text-decoration: underline;
+  font-style: normal;
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+#projects {
+  padding: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(70, 194, 203);
+}
+
+#projects,
+#contatos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projects-figures {
+  display: flex;
+  margin: 30px 40px 0 40px;
+}
+
+.project-tile {
+  border: 2px solid #333;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+figcaption {
+  height: 40px;
+  margin-top: -5px;
+  text-align: center;
+  font-size: 3.2vh;
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+  background-color: rgb(109, 103, 228);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  height: 45vh;
+}
+
+#contatos {
+  height: 90vh;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 100 0 0;
+  padding: 0 50px 0 50px;
+  text-align: center;
+}
+
+#info {
+  margin: 100 0 70 0;
+  padding: 80px;
+  height: 200px;
+}
+
+#linha-quebra {
+  height: 5px;
+  width: 100vw;
+  background-color: rgb(12, 12, 12);
+}
+
+footer {
+  height: 3vh;
+}
+
+footer p {
+  font-size: 18px;
+  margin-left: 30;
+  padding: 2px;
+}
