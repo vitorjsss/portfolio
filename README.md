@@ -7,6 +7,10 @@
   <img align="center" alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 </p>
 
+<p align="justify">
+  Portfolio desenvolvido por Arthur Marques, Vítor Raimundo & Vitor Jesus.
+</p>
+
 <br />
 > Status do Projeto: :heavy_check_mark: Concluído
 
