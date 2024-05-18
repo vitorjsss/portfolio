@@ -82,12 +82,6 @@ h1 {
   margin: 0;
 }
 
-h2 {
-  font-size: 6vh;
-  font-style: normal;
-
-}
-
 h3 {
   font-size: 5vh;
   color: rgb(240, 222, 54);
@@ -118,17 +112,18 @@ img {
 
 #project-title {
   color: black;
-  text-decoration: underline;
   font-style: normal;
-  font-size: 45px;
+  font-size: 60px;
   font-weight: lighter;
 }
 
 #projects {
-  padding: 100px;
   font-size: 20px;
   font-weight: bold;
-  background-color: white;
+  background-color: #f2f2f2;
+  width: 98vw;
+  padding: 100px 0 105px 0;
+  margin: 0 0 50px 0;
 }
 
 #projects,
@@ -150,9 +145,9 @@ img {
 
 figcaption {
   height: 40px;
-  margin-top: -5px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 3.2vh;
+  font-size: 24px;
   font-weight: normal;
   font-style: normal;
   display: block;
@@ -164,39 +159,28 @@ a {
   color: black;
 }
 
-.logo {
-  display: flex;
-  height: 45vh;
-}
-
-#contatos {
-  height: 90vh;
-}
-
-.svg-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 100 0 0;
-  padding: 0 50px 0 50px;
-  text-align: center;
-}
-
 #info {
-  margin: 100 0 70 0;
-  padding: 80px;
-  height: 200px;
+  margin: 40px;
 }
 
-#linha-quebra {
+#icon-container {
+  margin: 40px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.linha-quebra {
   height: 5px;
-  width: 100vw;
+  width: 98vw;
   background-color: rgb(12, 12, 12);
+  margin: 20px 0 20px 0;
 }
 
 footer {
-  height: 3vh;
+  height: 30px;
+  text-align: center;
 }
 
 footer p {
@@ -205,15 +189,24 @@ footer p {
   padding: 2px;
 }
 
-/* Estilo para a seção de contatos */
 #contatos {
   background-color: #f2f2f2;
   padding: 50px 0;
+  height: auto;
+  padding: 50px;
 }
 
-/* Estilo para o título */
-#contatos h1 {
-  color: #333;
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+#contatosInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  text-align: center;
 }
 
 /* Estilo para o container */
@@ -225,14 +218,12 @@ footer p {
 .contactContent {
   background-color: #fff;
   border-radius: 8px;
-  padding: 15px;
+  padding: 50px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para os campos de entrada */
 .form-control {
   width: calc(100% - 20px);
-  /* Reduzindo 20px da largura para dar espaço para as bordas */
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -246,12 +237,4 @@ footer p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-/* Estilo para o botão de envio em dispositivos pequenos */
-@media (max-width: 767px) {
-  .btn {
-    width: 100%;
-    /* Botão ocupa toda a largura */
-  }
 }

@@ -1,61 +1,53 @@
 import React from 'react';
+import gitLogo from '../assets/github-logo-240.png';
+import linkedinLogo from '../assets/linkedin-square-logo-240.png';
+import LinhaQuebra from './LinhaQuebra';
 
 function Contatos() {
     return (
-        <section id="contatos">
-             <div className="container mt-3 contactContent">
-                <h1 className="text-center">Me contate</h1>
-                <div className="col-lg-6">
-                    <form>
-                        <input type="text" className="form-control form-control-lg" placeholder="Nome" />
-                        <input type="email" className="form-control mt-3" placeholder="Email" />
-                        <input type="text" className="form-control mt-3" placeholder="Assunto" />
-                        <div className="mb-3 mt-3">
-                            <textarea className="form-control" rows="5" id="comment" name="text" placeholder="Detalhes"></textarea>
+        <section>
+            <div id="contatos">
+                <h1>Me contate</h1>
+                <div id="contatosInfo">
+                    <div className="container mt-3 contactContent">
+                        <h2>Me envie um email!</h2>
+                        <div>
+                            <form>
+                                <input type="text" className="form-control form-control-lg" placeholder="Nome" />
+                                <input type="email" className="form-control mt-3" placeholder="Email" />
+                                <input type="text" className="form-control mt-3" placeholder="Assunto" />
+                                <div className="mb-3 mt-3">
+                                    <textarea className="form-control" rows="5" id="comment" name="text" placeholder="Detalhes"></textarea>
+                                </div>
+                            </form>
+                            <button type="button" className="btn btn-success mt-3">Contate-Me</button>
                         </div>
-                    </form>
-                    <button type="button" className="btn btn-success mt-3">Contate-Me</button>
+                    </div>
+                    <div id="icon-container">
+                        <h2 id="info">Acompanhe Meu Trabalho Mais De Perto...</h2>
+                        <div>
+                            {/* GitHub SVG */}
+                            <div>
+                                <a id="profile-link" target="_blank" href="https://github.com/vitorjsss/vitorjsss">
+                                    <img className="icon" src={gitLogo}></img>
+                                    <p>Github</p>
+                                </a>
+                            </div>
+
+                            {/* LinkedIn SVG */}
+                            <div>
+                                <a href="https://www.linkedin.com/in/vitorjsss/">
+                                    <img className="icon" src={linkedinLogo}></img>
+                                    <p>Linkedin</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h2 id="info">Acompanhe Meu Trabalho Mais De Perto...</h2>
-            <div className="logo">
-                {/* GitHub SVG */}
-                <div className="svg-container">
-                    <a id="profile-link" target="_blank" href="https://github.com/vitorjsss/vitorjsss">
-                        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.285-.01-1.04-.015-2.04-3.207.7-3.878-1.54-3.878-1.54-.523-1.324-1.277-1.677-1.277-1.677-1.047-.714.08-.7.08-.7 1.16.082 1.77 1.193 1.77 1.193 1.03 1.763 2.707 1.255 3.368.96.105-.747.402-1.255.732-1.54-2.563-.285-5.258-1.285-5.258-5.707 0-1.26.45-2.285 1.193-3.095-.12-.288-.52-1.464.114-3.05 0 0 1.003-.308 3.3 1.18.957-.266 1.98-.398 3-.402 1.02.004 2.043.136 3 .402 2.293-1.488 3.295-1.18 3.295-1.18.636 1.586.236 2.762.116 3.05.75.81 1.193 1.835 1.193 3.095 0 4.43-2.7 5.418-5.27 5.7.417.357.787 1.06.787 2.137 0 1.544-.015 2.788-.015 3.163 0 .315.188.688.8.573C20.565 21.792 24 17.31 24 12c0-6.63-5.37-12-12-12">
-                            </path>
-                        </svg>
-                        <p>Github</p>
-                    </a>
-                </div>
-
-                {/* LinkedIn SVG */}
-                <div className="svg-container">
-                    <a href="https://www.linkedin.com/in/vitorjsss/">
-                        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M19.223 0H4.776C2.147 0 0 2.156 0 4.795v14.408C0 21.844 2.147 24 4.776 24h14.447C21.852 24 24 21.844 24 19.203V4.795C24 2.156 21.852 0 19.223 0zM7.67 19.203H4.91V9.498h2.76v9.705zM6.289 8.09h0.038c-1.5 0-2.458-.988-2.458-2.22 0-1.26.959-2.22 2.44-2.22s2.458.96 2.42 2.22c0 1.231-.92 2.22-2.402 2.22zM20.004 19.203h-2.761v-4.737c0-1.126-.405-1.896-1.418-1.896-.774 0-1.236.52-1.438 1.026-.074.18-.092.426-.092.674v4.933h-2.76s.037-7.55 0-8.348h2.76v1.183c.367-.565 1.02-1.373 2.484-1.373 1.81 0 3.168 1.19 3.168 3.75v5.788z">
-                            </path>
-                        </svg>
-                        <p>Linkedin</p>
-                    </a>
-                </div>
-
-                {/* Email SVG */}
-                <div className="svg-container">
-                    <a href="mailto:vitorjsssmamede.1@gmail.com">
-                        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                        <p>Email</p>
-                    </a>
-                </div>
-            </div>
-            <div id="linha-quebra"> </div>
+            <LinhaQuebra />
             <footer>
-                <p>Desenvolvido por: Vitor Soares</p>
+                <p>Desenvolvido por: Arthur Marques, Vítor Raimundo & Vitor Soares</p>
             </footer>
         </section>
     );
