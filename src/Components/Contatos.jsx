@@ -3,6 +3,20 @@ import React from 'react';
 function Contatos() {
     return (
         <section id="contatos">
+             <div className="container mt-3 contactContent">
+                <h1 className="text-center">Me contate</h1>
+                <div className="col-lg-6">
+                    <form>
+                        <input type="text" className="form-control form-control-lg" placeholder="Nome" />
+                        <input type="email" className="form-control mt-3" placeholder="Email" />
+                        <input type="text" className="form-control mt-3" placeholder="Assunto" />
+                        <div className="mb-3 mt-3">
+                            <textarea className="form-control" rows="5" id="comment" name="text" placeholder="Detalhes"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" className="btn btn-success mt-3">Contate-Me</button>
+                </div>
+            </div>
             <h2 id="info">Acompanhe Meu Trabalho Mais De Perto...</h2>
             <div className="logo">
                 {/* GitHub SVG */}
