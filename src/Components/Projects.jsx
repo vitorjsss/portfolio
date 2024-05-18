@@ -1,7 +1,7 @@
 import React from 'react';
-import tempConverterImg from '/react/portfolio/src/assets/TempConverter.jpeg';
-import rockScissorsPaperImg from '/react/portfolio/src/assets/RockScissorsPaper.jpeg';
-import guessTheFlagImg from '/react/portfolio/src/assets/GuessTheFlag.jpeg';
+import tempConverterImg from '../assets/TempConverter.jpeg';
+import rockScissorsPaperImg from '../assets/RockScissorsPaper.jpeg';
+import guessTheFlagImg from '../assets/GuessTheFlag.jpeg';
 
 const Projects = () => {
     return (
