@@ -5,9 +5,9 @@ export default function Header() {
         <div id="header">
             <nav>
                 <ul>
-                    <li><a href="#welcome-section">About</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contatos">Contato</a></li>
+                    <li><a href="#welcome-section">ABOUT</a></li>
+                    <li><a href="#projects">PROJETOS</a></li>
+                    <li><a href="#contatos">CONTATO</a></li>
                 </ul>
             </nav>
         </div>
