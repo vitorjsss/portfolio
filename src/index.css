@@ -231,7 +231,8 @@ footer p {
 
 /* Estilo para os campos de entrada */
 .form-control {
-  width: calc(100% - 20px); /* Reduzindo 20px da largura para dar espaço para as bordas */
+  width: calc(100% - 20px);
+  /* Reduzindo 20px da largura para dar espaço para as bordas */
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -250,7 +251,7 @@ footer p {
 /* Estilo para o botão de envio em dispositivos pequenos */
 @media (max-width: 767px) {
   .btn {
-    width: 100%; /* Botão ocupa toda a largura */
+    width: 100%;
+    /* Botão ocupa toda a largura */
   }
 }
-
